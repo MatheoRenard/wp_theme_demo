@@ -5,15 +5,15 @@
 
                 <?php while (have_posts()): the_post();?>
 
-											                    <article class="flex">
-											                        <div class="image-article quart">
+												                    <article class="flex post">
+												                        <div class="quart">
 
 
-											                        <?php if (has_post_thumbnail()): ?>
+												                        <?php if (has_post_thumbnail()): ?>
 
-											                        <?php the_post_thumbnail('small', ['class' => 'fluide']);?>
+												                        <?php the_post_thumbnail('small', ['class' => 'fluide']);?>
 
-											                        <?php endif?>
+												                        <?php endif?>
 
 
             </div>
