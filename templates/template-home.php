@@ -33,15 +33,15 @@ $query = new WP_Query($args);
 
                 <?php while ($query->have_posts()): $query->the_post();?>
 
-																							<article class="flex">
-																								<div class="image-article quart">
+																									<article class="flex">
+																										<div class="image-article quart">
 
 
-																				    <?php if (has_post_thumbnail()): ?>
+																						    <?php if (has_post_thumbnail()): ?>
 
-																					<?php the_post_thumbnail('small', ['class' => 'fluide']);?>
+																							<?php the_post_thumbnail('small', ['class' => 'fluide']);?>
 
-																					<?php endif?>
+																							<?php endif?>
 
 
 			                    </div>
@@ -57,15 +57,9 @@ $query = new WP_Query($args);
 
             </section>
             <section class="quart sidebar">
-                <article>
-                    <h3>Sidebar</h3>
-                    <div class="widget-container">
-                        <!-- widget -->
-                    </div>
-                    <div class="widget-container">
-                        <!-- widget -->
-                    </div>
-                </article>
+
+           <?php get_sidebar();?>
+
             </section>
         </div>
 
